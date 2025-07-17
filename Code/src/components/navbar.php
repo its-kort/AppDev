@@ -10,8 +10,8 @@
 
     <div class="nav-links">
         <a href="main.php">Home</a>
-        <a href="#">Reservation</a>
-        <a href="#">About Us</a>
-        <a href="#" class="login">Login</a>
+        <a href="pages/reservation.php">Reservation</a>
+        <a href="pages/about.php">About Us</a>
+        <a href="pages/login.php" class="login">Login</a>
     </div>
 </div>
