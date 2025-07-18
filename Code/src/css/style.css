@@ -28,6 +28,39 @@ a {
     text-align: center;
 }
 
+.about-us-container {
+    max-width: 1000px;
+    margin: 100px auto;
+    padding: 60px 30px;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(to bottom right, #1e1e1e, #2a2a2a);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.about-us-container h2 {
+    font-size: 36px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #ffb71c;
+    margin-bottom: 30px;
+}
+
+.about-us-container p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.section-background {
+    background-color: #000000;
+    padding: 100px 0;
+    
+}
+
+
 .title {
     color: #ffb71c;
     font-size: clamp(32px, 8vw, 80px);

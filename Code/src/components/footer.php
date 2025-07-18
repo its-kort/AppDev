@@ -3,7 +3,7 @@
 </head>
 
 <div class="footer-container">
-    <div class="copyright">© SIPAT 2025</div>
+    <div class="copyright">© SIPAT GROUP LTD. 2025</div>
     <div class="developed">
         Developed by:
         <div class="wrapper">
