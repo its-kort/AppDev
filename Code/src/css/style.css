@@ -45,28 +45,3 @@ a {
     text-transform: uppercase;
     letter-spacing: 5px;
 }
-
-.view-btn {
-    background-color: #ffae00;
-    color: rgb(0, 0, 0);
-    font-size: 17px;
-    font-weight: bold;
-    margin-top: 50px;
-    padding: 16px;
-    text-align: center;
-    text-decoration: none;
-    border: none;
-    transition: all .3s ease;
-    border-radius: 10px;
-}
-
-.view-btn:hover {
-    cursor: pointer;
-    transform: scale(95%);
-    background-color: #ef9000;
-
-}
-
-.view-btn:active {
-    transform: scale(80%);
-}

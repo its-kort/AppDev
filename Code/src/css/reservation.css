@@ -49,3 +49,59 @@ p {
     margin-bottom: 25px;
 }
 
+
+.view-btn {
+    background-color: #ffae00;
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 50px;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    transition: all .3s ease;
+    border-radius: 10px;
+}
+
+.view-btn:hover {
+    cursor: pointer;
+    transform: scale(95%);
+    background-color: #ef9000;
+
+}
+
+.view-btn:active {
+    transform: scale(80%);
+}
+
+.view-more-btn {
+    display: inline-block;
+    background-color: #f7a400;
+    color: black;
+    padding: 10px 20px;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.view-more-btn:hover:not(:disabled) {
+    background-color: #d98f00;
+}
+
+.view-more-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+.status.available {
+    color: #00c853; /* Material green */
+}
+
+.status.booked {
+    color: #d50000; /* Material red */
+}
