@@ -73,7 +73,7 @@ function isActiveForm($formName, $activeForm){
 
         </div>
     </div>
-    <script src="../JS/login.js"></script>
+    <script src="../js/login.js"></script>
     <?php require_once('../components/footer.php')?>
 </body>
 
