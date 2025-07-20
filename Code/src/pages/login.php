@@ -40,7 +40,7 @@ function isActiveForm($formName, $activeForm){
 
 <body>
     <div class="landing-container">
-        <a href="../main.php"><img src="../../assets/images/logo2.png" alt="logo"></a>
+        <a href="../main.php"><img class="logo-icon" src="../../assets/images/logo2.png" alt="logo"></a>
 
         <div class ="box <?= isActiveForm('login', $activeForm); ?>" id = "login-form">
             <form action="../components/register-login.php" method="post">

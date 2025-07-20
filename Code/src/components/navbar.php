@@ -4,8 +4,8 @@
 
 <div class="navbar-container">
     <a href="main.php" class="logo">
-        <img src="../assets/images/logo.png" alt="logo" class="logo-icon">
-        <div class="logo-text">SIPAT</div>
+        <img src="../assets/images/logo2.png" alt="logo" class="logo-icon">
+        <!-- <div class="logo-text">SIPAT</div> -->
     </a>
 
     <div class="nav-links">
