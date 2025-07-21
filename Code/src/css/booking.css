@@ -5,10 +5,6 @@
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     font-family: "Montserrat", sans-serif;
 }
@@ -19,7 +15,7 @@ a {
 
 .booking-container {
     width: 100%;
-    height: 100%;
+    height: 120vh;
     display: flex;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, .5) 0% , rgba(0, 0, 0, .5) 75%,rgba(0, 0, 0, 1) 100%),
                       url('../../../assets/images/landing.jpg');
@@ -29,7 +25,19 @@ a {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 100px;
+}
+
+.book-wrapper {
+    /* padding:0px 20px; */
+    /* margin-top:70px; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    transform: scale(90%);
 }
 
 .form {
