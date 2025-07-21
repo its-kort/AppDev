@@ -21,7 +21,6 @@ function isActiveForm($formName, $activeForm){
 ?>
 
 
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -32,15 +31,15 @@ function isActiveForm($formName, $activeForm){
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/footer.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Account sign in: B.I.L.Y.A.R.</title>
+    <title>Sign In | B.I.L.Y.A.R.</title>
     
 </head>
 
-
-
 <body>
+    <?php require_once('../components/navbar.php')?>
+
     <div class="landing-container">
-        <a href="../main.php"><img class="logo-icon" src="../../assets/images/logo2.png" alt="logo"></a>
+        <a href="../main.php"><img class="logo-icon-2" src="../../assets/images/logo2.png" alt="logo"></a>
 
         <div class ="box <?= isActiveForm('login', $activeForm); ?>" id = "login-form">
             <form action="../components/register-login.php" method="post">
@@ -68,7 +67,7 @@ function isActiveForm($formName, $activeForm){
                     <option value="N/A">Rather not indicate</option>
                 </select>
                 <button type = "submit" name="register">Sign Up</button>
-                <p>Don't have an account? <a href="#" onclick="showForm('login-form')">Login</a></p>
+                <p>Already have an account? <a href="#" onclick="showForm('login-form')">Login</a></p>
             </form>
 
         </div>

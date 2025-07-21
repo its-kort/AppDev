@@ -44,8 +44,8 @@ for ($tableNumber = 1; $tableNumber <= 6; $tableNumber++) {
     $isAvailable = getAvailableSlotsForTable($pdo, $tableNumber);
 
     $statusText = $isAvailable
-        ? "<span class='status available'>Available</span>"
-        : "<span class='status booked'>Fully Booked</span>";
+        ? "<span class='status available'>Available for reservation.</span>"
+        : "<span class='status booked'>Table booked.</span>";
 
     $tableStatuses[$tableNumber] = [
         'status' => $statusText,

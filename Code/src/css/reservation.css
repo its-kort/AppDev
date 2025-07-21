@@ -88,23 +88,33 @@ p {
     border: none;
     border-radius: 12px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
     font-size: 1rem;
     cursor: pointer;
 }
 
 .view-more-btn:hover:not(:disabled) {
-    background-color: #d98f00;
+    cursor: pointer;
+    transform: scale(95%);
+    background-color: #ef9000;
 }
 
 .view-more-btn:disabled {
     opacity: 0.5;
-    cursor: not-allowed;
 }
+
+.details {
+    margin-bottom: 25px;
+}
+
+.status {
+    font-weight: 600;
+}
+
 .status.available {
-    color: #00c853; /* Material green */
+    color: #36ff8a; /* Material green */
 }
 
 .status.booked {
-    color: #d50000; /* Material red */
+    color: #e55c5c; /* Material red */
 }

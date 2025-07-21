@@ -1,9 +1,9 @@
 <head>
-    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="../css/footer.css">
 </head>
 
 <div class="footer-container">
-    <div class="copyright">© SIPAT GROUP LTD. 2025</div>
+    <div class="copyright">© 2025 SIPAT Ltd.</div>
     <div class="developed">
         Developed by:
         <div class="wrapper">

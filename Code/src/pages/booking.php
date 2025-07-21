@@ -45,39 +45,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="../css//booking.css">
     <title>S.I.P.A.T Booking</title>
 </head>
 <body>
+<?php require_once('../components/navbar.php')?>
 
+    <div class="booking-container">
+        
     <?php
         require_once '../reservation/database.inc.php'; // connect to DB
         $duration = isset($_POST['Duration']) ? (int)$_POST['Duration'] : 1;
         $availableSlots = getAvailableSlots($pdo, $TableNumber, $duration);
     ?>
+        <div class="table-num-head">
+            <div class="table-num">
+                <?= $TableNumber ?>
+            </div>
+            Table Number
 
-    <p>Table Number: <?= $TableNumber ?></p>
+        </div>
 
-    <form method="POST" action="../reservation/formhandler.inc.php">
-        <input type="hidden" name="TableNum" value="<?= $TableNumber ?>">
+        <div class="form">
 
-        <label for="Name">Name:</label>
-        <input type="text" name="Name" id="Name" required><br><br>
+        <form method="POST" action="../reservation/formhandler.inc.php">
+            <input type="hidden" name="TableNum" value="<?= $TableNumber ?>">
+            <h1>Booking</h1>
+            <div class="name">
+                <label for="Name">Name:</label>
+                <input type="text" name="Name" id="Name" required><br><br>
+            </div>
+            
+            <div class="contact">
+                <label for="Contact">Contact Number:</label>
+                <input type="text" name="Contact" id="Contact" required><br><br>
+            </div>
+            
+            <div class="time">
+                <label for="Time">Time:</label>
+                    <select name="Time" id="Time" required>
+                    <?php foreach ($availableSlots as $slot): ?>
+                    <option value="<?= $slot ?>"><?= $slot ?></option>
+                    <?php endforeach; ?>
+                </select><br><br>
+            </div>
+            
+            <div class="duration">
+                <label for="Duration">Duration (hours):</label>
+                <input type="number" name="Duration" id="Duration" min="1" max="10" required><br><br>
+            </div>
+            
+            <button type="submit">Submit</button>
+        </form>
+        </div>
 
-        <label for="Contact">Contact Number:</label>
-        <input type="text" name="Contact" id="Contact" required><br><br>
-
-        <label for="Time">Time:</label>
-            <select name="Time" id="Time" required>
-            <?php foreach ($availableSlots as $slot): ?>
-            <option value="<?= $slot ?>"><?= $slot ?></option>
-            <?php endforeach; ?>
-        </select><br><br>
-
-        <label for="Duration">Duration (hours):</label>
-        <input type="number" name="Duration" id="Duration" min="1" max="10" required><br><br>
-
-        <button type="submit">Submit</button>
-    </form>
+    </div>
+    <?php require_once('../components/footer.php')?>
+                        
 </body>
 </html>
 

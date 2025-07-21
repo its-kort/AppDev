@@ -47,27 +47,29 @@ input, select {
 
 }
 
-select{
-    width: 100%;
-}
-
 button{
-    width: 100%;
-    padding: 20px;
-    background: #ffae00;
-    border-radius: 6px;
+    background-color: #ffae00;
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    width: 90%;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
     border: none;
-    cursor: pointer;
-    font-size: 16px;
-    color:#fff;
-    font-weight: 500;
-    margin-bottom: 25px;
-    transition: 0.5s;
+    transition: all .3s ease;
+    border-radius: 10px;
 }
 
 button:hover{
-    background: white;
-    color:#333;
+    cursor: pointer;
+    transform: scale(95%);
+    background-color: #ef9000;
+}
+
+button:active {
+    transform: scale(80%);
 }
 
 p{
@@ -84,7 +86,7 @@ p a{
 }
 
 p a:hover{
-    color: white;
+    color: #db8400;
 }
 
 img{
@@ -104,8 +106,8 @@ img{
     margin-bottom: 20px;
 }
 
-.logo-icon {
+.logo-icon-2 {
     display: block;
     width: 200px !important;
-    margin-bottom: 25px;
+    margin-bottom: 25px !important;
 }
